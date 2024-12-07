@@ -45,7 +45,7 @@ const Home = () => {
     <div className={styles.wrapper}>
       <Searchbar handleSearch={handleSearch} />
       {isLoading && <p className={styles.loading}>Loading data...</p>}
-      {!isLoading && weatherData && <WeatherDisplay data={weatherData} />}
+      {!isLoading && weatherData && <div className="weather-cards"> <WeatherDisplay data={weatherData} /> </div>}
     </div>
   );
 };
