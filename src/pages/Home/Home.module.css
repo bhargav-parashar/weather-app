@@ -1,0 +1,11 @@
+.wrapper{
+    height: 95vh;
+    width: 100%;
+    position: relative;
+}
+.loading{
+    position: absolute;
+    left: 50%;
+    top:40%;
+    transform: translate(-70%,-50%);
+}
