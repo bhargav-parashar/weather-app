@@ -3,8 +3,8 @@ import styles from "./WeatherDisplay.module.css";
 
 const WeatherDisplay = ({ data }) => {
   return (
-    <div className={styles.wrapper}>
-      <div className={styles['weather-cards']}>
+    <div className={styles['weather-cards']}>
+      <div className={styles['items']}>
         <WeatherCard label="Temperature" value={`${data.current.temp_c}°C`} />
         <WeatherCard label="Humidity" value={`${data.current.humidity}%`} />
         <WeatherCard label="Condition" value={data.current.condition.text} />

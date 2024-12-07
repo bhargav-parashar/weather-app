@@ -1,4 +1,4 @@
-.wrapper {
+.weather-cards {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -7,7 +7,7 @@
   justify-content: space-between;
 }
 @media (max-width: 900px) {
-  .weather-cards {
+  .items {
     display: grid;
     grid-template-columns: repeat(2, 49%);
     grid-row-gap: 4%;
@@ -15,7 +15,7 @@
   }
 }
 @media (min-width: 901px) {
-  .weather-cards {
+  .items {
     display: grid;
     grid-template-columns: repeat(4, 22%);
     grid-column-gap: 4%;
