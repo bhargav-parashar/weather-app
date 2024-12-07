@@ -1,10 +1,9 @@
 import WeatherCard from "../WeatherCard/WeatherCard";
 import styles from "./WeatherDisplay.module.css";
-import "../../styles.css";
 
 const WeatherDisplay = ({ data }) => {
   return (
-    <div className="weather-cards">
+    <div className={styles['weather-cards']}>
       <div className={styles['items']}>
         <WeatherCard label="Temperature" value={`${data.current.temp_c}°C`} />
         <WeatherCard label="Humidity" value={`${data.current.humidity}%`} />
