@@ -4,6 +4,7 @@ import styles from "./Home.module.css";
 import WeatherDisplay from "../../components/WeatherDisplay/WeatherDisplay.jsx";
 import axios from "axios";
 
+
 const Home = () => {
   const [searchInput, setSearchInput] = useState("");
   const [weatherData, setWeatherData] = useState(null);
@@ -43,8 +44,8 @@ const Home = () => {
   return (
     <div className={styles.wrapper}>
       <Searchbar handleSearch={handleSearch} />
-      {isLoading && <p className={styles.loading}>Loading... </p>}
-      {!isLoading && weatherData && <WeatherDisplay data={weatherData} />}
+      {isLoading && <p className={styles.loading}>Loading data...</p>}
+      {!isLoading && weatherData && <WeatherDisplay className="weather-cards" data={weatherData} />}
     </div>
   );
 };
